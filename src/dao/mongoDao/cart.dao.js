@@ -19,13 +19,6 @@ class CartDao {
 
     async deleteById(id) {
         return await cartModel.deleteById(id);
-    //     try {
-    //         const data = await cartModel.findByIdAndDelete(id);
-    //         console.log("borrado")
-    //         return ['200', `Registro ${id} borrado Correctamente`, null];
-    //     } catch (error) {
-    //         return [error, `Error ${error}`, null];
-    //     }
        }
 
     async deleteProductInCart(cid, pid) {
